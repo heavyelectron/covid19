@@ -45,8 +45,8 @@ def subtract():
 						nrow.append(row[i])
 					writer.writerow(nrow)
 				if row[6] == 'California' and row[0]!='84080006' and row[0]!='84090006':
-					
-					nrow = [row[5], row[8], row[9], row[11], row[-1], int(row[-1])/int(row[11])*100000, int(row[-1])-int(row[-2])]
+					drate = "{:,.2f}".format(int(row[-1])/int(row[11])*100000)
+					nrow = [row[5], row[8], row[9], row[11], row[-1], drate, int(row[-1])-int(row[-2])]
 					for i in range(start_date+1, len(row)):
 						nrow.append(row[i])
 					writer.writerow(nrow)
