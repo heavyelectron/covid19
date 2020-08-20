@@ -120,7 +120,7 @@ def merge(infile, input_date):
 				rcase[7] = int(rcase[-1])-int(rcase[-2]) if rcase[-2] !='' else rcase[-1]
 				rcase[8] = int(rcase[-1])-int(rcase[-8]) if rcase[-8] !='' else rcase[-1]
 				if rcase[-31] != '':
-					rcase[9] = (int(rcase[-1])-int(rcase[-31]))*100000//int(rcase[10]) 
+					rcase[9] = (int(rcase[-1])-int(rcase[-15]))*100000//int(rcase[10]) 
 				else:
 					rcase[9] = int(rcase[-1])*100000//int(rcase[10]) 
 				ncases.writerow(rcase)
