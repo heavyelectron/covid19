@@ -1,12 +1,28 @@
+# Los Angeles County COVID-19 Daily Reports
+
+8/21/2020 Update
+
+   * Deaths: 46 new, 5,491 total
+   * Cases: 1,759 new, 229,054 total
+   * Hospitalized: 1,280 current
+
+7-day avgs for new deaths/cases
+  
+   * today: 42/1,543
+   * 1W ago: 44/2,123
+   * 2Ws ago: 44/2,295
+   * 1M ago: 42/3,180
+
 ## Contents
 
 <!--ts-->
-   * [Los Angeles County COVID-19 Statistics (updated every afternoon)](#stats)
+   * [Los Angeles County COVID-19 Statistics Curves (updated every afternoon)](#stats)
+   * [Map for daily new cases of cities/communities in Los Angeles County (ArcGIS Online)](https://arcg.is/1jS8TX0)
+   * [Los Angeles County COVID-19 Recovery Metrics](https://docs.google.com/spreadsheets/d/e/2PACX-1vSNKjIlnTz9NPIRIOhf1pwHTg01zt4k4hE0B7x-bFXCcuH8JoOmNlhIejbwEgoqLx4Pq0J-w0miaN16/pubhtml?gid=350811760&single=true), with [thresholds set by state of California](https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/COVID-19/COVID19CountyDataTable.aspx)
    * [COVID-19 by the Numbers: Comparison between US, California and Los Angeles County(updated every day after 10pm)](#comparison)
    * [Los Angeles County COVID-19 Cases by Race/Ethnicity (updated every Wednesday)](#race_case)
    * [Los Angeles County COVID-19 Deaths by Race/Ethnicity(updated every Wednesday)](#race_death)
-   * [Los Angeles County COVID-19 Deaths by Age Group(updated every Wednesday, from 7/24/20)](#age)
-   * [Los Angeles County COVID-19 Deaths by Age Group(before 7/24/20)](#age_o)   
+   * [Los Angeles County COVID-19 Deaths by Age Group(updated every Wednesday)](#age) 
    * [Data Sources](#source)
 <!--te-->
 
@@ -48,16 +64,14 @@
 
 <a name="age"/>
 
-## Los Angeles County COVID-19 Cases by Age Group (after 07/24/20)
+## Los Angeles County COVID-19 Cases by Age Group 
 
+### data after 07/24/20
 ![](https://docs.google.com/spreadsheets/d/e/2PACX-1vSNKjIlnTz9NPIRIOhf1pwHTg01zt4k4hE0B7x-bFXCcuH8JoOmNlhIejbwEgoqLx4Pq0J-w0miaN16/pubchart?oid=2063171426&format=image)
 ![](https://docs.google.com/spreadsheets/d/e/2PACX-1vSNKjIlnTz9NPIRIOhf1pwHTg01zt4k4hE0B7x-bFXCcuH8JoOmNlhIejbwEgoqLx4Pq0J-w0miaN16/pubchart?oid=1025985944&format=image)
 ![](https://docs.google.com/spreadsheets/d/e/2PACX-1vSNKjIlnTz9NPIRIOhf1pwHTg01zt4k4hE0B7x-bFXCcuH8JoOmNlhIejbwEgoqLx4Pq0J-w0miaN16/pubchart?oid=1699521500&format=image)
 
-
-<a name="age_o"/>
-
-## Los Angeles County COVID-19 Cases by Age Group (before 07/24/20)
+### data prior to 07/24/20 (with a different age group division)
 
 ![](https://docs.google.com/spreadsheets/d/e/2PACX-1vSNKjIlnTz9NPIRIOhf1pwHTg01zt4k4hE0B7x-bFXCcuH8JoOmNlhIejbwEgoqLx4Pq0J-w0miaN16/pubchart?oid=1087026402&format=image)
 ![](https://docs.google.com/spreadsheets/d/e/2PACX-1vSNKjIlnTz9NPIRIOhf1pwHTg01zt4k4hE0B7x-bFXCcuH8JoOmNlhIejbwEgoqLx4Pq0J-w0miaN16/pubchart?oid=631539046&format=image)
