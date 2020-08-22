@@ -20,9 +20,8 @@
    * [Map for daily new cases of cities/communities in Los Angeles County (ArcGIS Online)](https://arcg.is/1jS8TX0)
    * [Los Angeles County COVID-19 Recovery Metrics](https://docs.google.com/spreadsheets/d/e/2PACX-1vSNKjIlnTz9NPIRIOhf1pwHTg01zt4k4hE0B7x-bFXCcuH8JoOmNlhIejbwEgoqLx4Pq0J-w0miaN16/pubhtml?gid=350811760&single=true), with [thresholds set by state of California](https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/COVID-19/COVID19CountyDataTable.aspx)
    * [COVID-19 by the Numbers: Comparison between US, California and Los Angeles County(updated every day after 10pm)](#comparison)
-   * [Los Angeles County COVID-19 Cases by Race/Ethnicity (updated every Wednesday)](#race_case)
-   * [Los Angeles County COVID-19 Deaths by Race/Ethnicity(updated every Wednesday)](#race_death)
-   * [Los Angeles County COVID-19 Deaths by Age Group(updated every Wednesday)](#age) 
+   * [Los Angeles County COVID-19 Cases/Deaths by Race/Ethnicity (updated every Wednesday)](#race)
+   * [Los Angeles County COVID-19 Cases/Deaths by Age Group(updated every Wednesday)](#age) 
    * [Data Sources](#source)
 <!--te-->
 
@@ -44,18 +43,18 @@
 ![](https://docs.google.com/spreadsheets/d/e/2PACX-1vSNKjIlnTz9NPIRIOhf1pwHTg01zt4k4hE0B7x-bFXCcuH8JoOmNlhIejbwEgoqLx4Pq0J-w0miaN16/pubchart?oid=1342472335&format=image)
 ![](https://docs.google.com/spreadsheets/d/e/2PACX-1vSNKjIlnTz9NPIRIOhf1pwHTg01zt4k4hE0B7x-bFXCcuH8JoOmNlhIejbwEgoqLx4Pq0J-w0miaN16/pubchart?oid=1093657145&format=image)
 
-<a name="race_case"/>
+<a name="race"/>
 
-## Los Angeles County COVID-19 Cases by Race/Ethnicity
+## Los Angeles County COVID-19 Cases/Deaths by Race/Ethnicity
+
+### Cases
 
 ![](https://docs.google.com/spreadsheets/d/e/2PACX-1vSNKjIlnTz9NPIRIOhf1pwHTg01zt4k4hE0B7x-bFXCcuH8JoOmNlhIejbwEgoqLx4Pq0J-w0miaN16/pubchart?oid=109245945&format=image)
 ![](https://docs.google.com/spreadsheets/d/e/2PACX-1vSNKjIlnTz9NPIRIOhf1pwHTg01zt4k4hE0B7x-bFXCcuH8JoOmNlhIejbwEgoqLx4Pq0J-w0miaN16/pubchart?oid=496618746&format=image)
 ![](https://docs.google.com/spreadsheets/d/e/2PACX-1vSNKjIlnTz9NPIRIOhf1pwHTg01zt4k4hE0B7x-bFXCcuH8JoOmNlhIejbwEgoqLx4Pq0J-w0miaN16/pubchart?oid=2090889239&format=image)
 ![](https://docs.google.com/spreadsheets/d/e/2PACX-1vSNKjIlnTz9NPIRIOhf1pwHTg01zt4k4hE0B7x-bFXCcuH8JoOmNlhIejbwEgoqLx4Pq0J-w0miaN16/pubchart?oid=2109217705&format=image)
 
-<a name="race_death"/>
-
-## Los Angeles County COVID-19 Caused Deaths by Race/Ethnicity
+### Deaths
 
 ![](https://docs.google.com/spreadsheets/d/e/2PACX-1vSNKjIlnTz9NPIRIOhf1pwHTg01zt4k4hE0B7x-bFXCcuH8JoOmNlhIejbwEgoqLx4Pq0J-w0miaN16/pubchart?oid=2118915779&format=image)
 ![](https://docs.google.com/spreadsheets/d/e/2PACX-1vSNKjIlnTz9NPIRIOhf1pwHTg01zt4k4hE0B7x-bFXCcuH8JoOmNlhIejbwEgoqLx4Pq0J-w0miaN16/pubchart?oid=302938485&format=image)
