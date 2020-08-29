@@ -2,16 +2,16 @@
 
 8/27/2020 Update
 
-   * Deaths: 38 new, 5,701 total
-   * Cases: 1,636 new, 236,986 total
-   * Hospitalized: 1,168 current
+   * Deaths: 31 new, 5,732 total
+   * Cases: 1,509 new, 238,458 total
+   * Hospitalized: 1,116 current
 
 7-day avgs for new deaths/cases
   
-   * today: 37/1,424
-   * 1W ago: 41/1669
-   * 2Ws ago: 45/2191
-   * 1M ago: 41/2472
+   * today: 35/1,388
+   * 1W ago: 42/1543
+   * 2Ws ago: 44/2123
+   * 1M ago: 45/2695
 
 ## Contents
 
