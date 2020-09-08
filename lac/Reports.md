@@ -1,18 +1,18 @@
 # Los Angeles County COVID-19 Daily Reports
 
-9/6/2020 Update
+9/7/2020 Update
 
-   * Deaths: 5 new, 6,005 total
-   * Cases: 798 new, 248,334 total
-   * Hospitalized: 943 current
+   * Deaths: 25 new, 6,030 total
+   * Cases: 494 new, 248,821 total
+   * Hospitalized: 942 current
 
 7-day avgs for new deaths/cases
   
-   * today: 36/1143
-   * yesterday: 36/1176
-   * 1W ago: 33/1335
-   * 2Ws ago: 43/1464
-   * 1M ago: 44/2295
+   * today: 37/1067
+   * yesterday: 36/1143
+   * 1W ago: 33/1310
+   * 2Ws ago: 42/1466
+   * 1M ago: 45/2344
 
 ## Contents
 
