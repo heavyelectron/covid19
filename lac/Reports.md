@@ -2,17 +2,9 @@
 
 9/12/2020 Update
 
-   * Deaths: 29 new, 6,197 total
-   * Cases: 1,177 new, 253,176 total
-   * Hospitalized: 793 current
-
-7-day avgs for new deaths/cases
-  
-   * today: 30/848
-   * yesterday: 30/850
-   * 1W ago: 36/1176
-   * 2Ws ago: 32/1344
-   * 1M ago: 45/2191
+   * Deaths: 11 new, 6,208 total
+   * Cases: 816 new, 253,985 total
+   * Hospitalized: 775 current
 
 ## Contents
 
