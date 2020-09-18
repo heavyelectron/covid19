@@ -1,10 +1,10 @@
 # Los Angeles County COVID-19 Daily Reports
 
-9/16/2020 Update
+9/17/2020 Update
 
-   * Deaths: 31 new, 6,303 total, 32 (7day average)
-   * Cases: 1148 new, 256,148 total, 957 (7day average)
-   * Hospitalized: 780 current, 238 ICU
+   * Deaths: 38 new, 6,324 total, 32 (7day average)
+   * Cases: 1,160 new, 257,271 total, 946 (7day average)
+   * Hospitalized: 739 current, 232 ICU
 
 ## Contents
 
