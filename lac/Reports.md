@@ -1,16 +1,17 @@
 # Los Angeles County COVID-19 Daily Reports
 
-9/27/2020 Update
+9/28/2020 Update
 
-   * Deaths: 10 new 6,514 total
-   * Cases: 815 new 267,801 total
+   * Deaths: 1 new 6,515 total
+   * Cases: 663 new 268,455 total
  
 ## Contents
 
 <!--ts-->
    * [Los Angeles County COVID-19 Statistics Curves (updated every afternoon)](#stats)
    * [Map for daily new cases of cities/communities in Los Angeles County (ArcGIS Online)](https://arcg.is/1jS8TX0)
-   * [Los Angeles County COVID-19 Recovery Metrics](https://docs.google.com/spreadsheets/d/e/2PACX-1vSNKjIlnTz9NPIRIOhf1pwHTg01zt4k4hE0B7x-bFXCcuH8JoOmNlhIejbwEgoqLx4Pq0J-w0miaN16/pubhtml?gid=350811760&single=true), with [thresholds set by state of California](https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/COVID-19/COVID19CountyDataTable.aspx)
+   * [Los Angeles County COVID-19 Recovery Metrics](https://public.tableau.com/shared/8DH3356MQ?:toolbar=n&:display_count=y&:origin=viz_share_link&:embed=y&:showVizHome=no) by California's [Blueprint for a Safer Economy](https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/COVID-19/COVID19CountyMonitoringOverview.aspx) Updated every Tuesday 
+   * [(obsolete) Los Angeles County COVID-19 Recovery Metrics](https://docs.google.com/spreadsheets/d/e/2PACX-1vSNKjIlnTz9NPIRIOhf1pwHTg01zt4k4hE0B7x-bFXCcuH8JoOmNlhIejbwEgoqLx4Pq0J-w0miaN16/pubhtml?gid=350811760&single=true), with [thresholds set by state of California](https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/COVID-19/COVID19CountyDataTable.aspx)
    * [COVID-19 by the Numbers: Comparison between US, California and Los Angeles County(updated every day after 10pm)](#comparison)
    * [Los Angeles County COVID-19 Cases/Deaths by Race/Ethnicity (updated every Wednesday)](#race)
    * [Los Angeles County COVID-19 Cases/Deaths by Age Group(updated every Wednesday)](#age) 
