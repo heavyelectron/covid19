@@ -1,9 +1,9 @@
 # Los Angeles County COVID-19 Daily Reports
 
-9/28/2020 Update
+9/29/2020 Update
 
-   * Deaths: 1 new 6,515 total
-   * Cases: 663 new 268,455 total
+   * Deaths: 39	new,  6,551 total
+   * Cases: 905 new 269,284 total
  
 ## Contents
 
