@@ -1,7 +1,7 @@
 # Los Angeles County COVID-19 Daily Reports
 
 
-Last updated: 10/17/2020 
+Last updated: 10/18/2020 
 
 (missing 10/15, 10/16 lac cities death data, copied from 10/14)
 
