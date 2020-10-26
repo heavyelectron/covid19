@@ -1,10 +1,7 @@
 # Los Angeles County COVID-19 Daily Reports
 
 
-Last updated: 10/22/2020 
-
-(missing 10/15, 10/16 lac cities death data, copied from 10/14)
-
+Last updated: 10/25/2020 
 
 
 ## Contents
@@ -18,6 +15,7 @@ Last updated: 10/22/2020
    * [Los Angeles County COVID-19 Cases/Deaths by Race/Ethnicity (updated every Wednesday)](#race)
    * [Los Angeles County COVID-19 Cases/Deaths by Age Group(updated every Wednesday)](#age) 
    * [Data Sources](#source)
+   * [See LAC historic data from Wayback Machine](https://web.archive.org/web/*/http://publichealth.lacounty.gov/media/Coronavirus/locations.htm) 
 <!--te-->
 
 <a name="stats"/>
