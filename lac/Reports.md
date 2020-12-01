@@ -22,7 +22,7 @@ Last updated 11/30/2020
 
 ![](https://docs.google.com/spreadsheets/d/e/2PACX-1vSNKjIlnTz9NPIRIOhf1pwHTg01zt4k4hE0B7x-bFXCcuH8JoOmNlhIejbwEgoqLx4Pq0J-w0miaN16/pubchart?oid=2058626982&format=image)  
 ![](https://docs.google.com/spreadsheets/d/e/2PACX-1vSNKjIlnTz9NPIRIOhf1pwHTg01zt4k4hE0B7x-bFXCcuH8JoOmNlhIejbwEgoqLx4Pq0J-w0miaN16/pubchart?oid=1543185546&format=image)
-![](https://docs.google.com/spreadsheets/d/e/2PACX-1vSNKjIlnTz9NPIRIOhf1pwHTg01zt4k4hE0B7x-bFXCcuH8JoOmNlhIejbwEgoqLx4Pq0J-w0miaN16/pubchart?oid=1954758768&format=image)
+![](https://docs.google.com/spreadsheets/d/e/2PACX-1vSNKjIlnTz9NPIRIOhf1pwHTg01zt4k4hE0B7x-bFXCcuH8JoOmNlhIejbwEgoqLx4Pq0J-w0miaN16/pubchart?oid=1340870152&format=image)
 ![](https://docs.google.com/spreadsheets/d/e/2PACX-1vSNKjIlnTz9NPIRIOhf1pwHTg01zt4k4hE0B7x-bFXCcuH8JoOmNlhIejbwEgoqLx4Pq0J-w0miaN16/pubchart?oid=1954758768&format=image)
 
 <a name="comparison"/>
