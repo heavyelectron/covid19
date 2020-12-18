@@ -69,6 +69,8 @@ def convert(infile, lpfile):
 					out.write("{}\n".format(line.strip()))	
 				elif ("Unincorporated - San Francisquito Canyon/Bouquet Canyon" in line):
 					out.write("{}\n".format(line.strip()))	
+				elif ("Unincorporated - Harbor Gateway"in line):
+					out.write("{}\n".format(line.strip()))	
 			else:
 				if not ('Unincorporated' in line):
 					out.write("{}\n".format(line.strip())) 
