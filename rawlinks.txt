@@ -1,0 +1,5 @@
+https://raw.githubusercontent.com/heavyelectron/covid19/main/lac/lac_cities_newcases.csv
+
+https://raw.githubusercontent.com/heavyelectron/covid19/main/cal/ca_counties_cases.csv
+
+https://raw.githubusercontent.com/heavyelectron/covid19/main/us/us_states_cases.csv
