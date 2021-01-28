@@ -70,7 +70,7 @@ def print_us():
     Print out the US case and death counts for the most recent 5 days
     """
     # the date range
-    days = 5
+    days = 14
 
     print("US summary:")
     # open the global file
@@ -105,7 +105,7 @@ def print_cal():
 
     print("California summary: cases, deaths")
     # count down for 5 days
-    for i in range(5):
+    for i in range(14):
         day = today - timedelta(i)
         # date string, e.g., 07-22-2020
         datestring = datetime.strftime(day, '%m-%d-%Y')
