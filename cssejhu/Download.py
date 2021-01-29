@@ -82,17 +82,21 @@ def print_us():
             # first line: header
             if row[1] == "Country/Region":
                 length = len(row)
-                print(row[1], row[length-days:length])
+                dates = row[length-days:length]
             # find US
             elif row[1] == 'US':
                 length = len(row)
-                print('US Cases:', row[length - days:length])
+                cases =  row[length - days:length]
     with open('global_deaths.csv', newline='') as csvfile:
         reader = csv.reader(csvfile, delimiter=',', quotechar='|')
         for row in reader:
             if row[1] == 'US':
                 length = len(row)
-                print('US Deaths', row[length-days:length])
+                deaths = row[length-days:length]
+    
+    for i in range(days):
+        print(dates[i], f'{int(cases[i]):,}', f'{int(deaths[i]):,}') 
+   
     return
 
 def print_cal():
@@ -119,7 +123,7 @@ def print_cal():
                 for row in reader:
                     # find California
                     if row[0] == 'California':
-                        print(datestring, [row[i] for i in [5, 6, 12]])
+                        print(datestring, [f'{int(row[i]):,}' for i in [5, 6]])
 
     return
 
