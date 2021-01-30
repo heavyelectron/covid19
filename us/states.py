@@ -97,6 +97,52 @@ def append():
 
 	# all done
 	return
+	
+	
+def newcases():
+	"""
+	Compute the new cases/deaths
+	"""
+	import locale
+	locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
+	
+	# open cumulative cases file
+	with open('us_states_cases.csv', newline='') as infile:
+		# define a csv reader
+		reader = csv.reader(infile, delimiter=',')
+		# open the new cases file as output 
+		with open('us_states_newcases.csv', 'w') as outfile:
+			# define a csv writer
+			writer = csv.writer(outfile, delimiter=',')
+			# read it line by line
+			for row in reader:
+				# first line, as header
+				if row[0] == 'State':
+					nrow = row[0:3] + row[8:]
+				else:
+					nrow = row[0:3]
+					for i in range(8, len(row)):
+						nrow += [locale.atoi(row[i])-locale.atoi(row[i-1])]
+				writer.writerow(nrow)
+	
+	with open('us_states_deaths.csv', newline='') as infile:
+		# define a csv reader
+		reader = csv.reader(infile, delimiter=',')
+		# open the new cases file as output 
+		with open('us_states_newdeaths.csv', 'w') as outfile:
+			# define a csv writer
+			writer = csv.writer(outfile, delimiter=',')
+			# read it line by line
+			for row in reader:
+				# first line, as header
+				if row[0] == 'State':
+					nrow = row[0:3] + row[8:]
+				else:
+					nrow = row[0:3]
+					for i in range(8, len(row)):
+						nrow += [locale.atoi(row[i])-locale.atoi(row[i-1])]
+				writer.writerow(nrow)		
 
 if __name__ == '__main__':
 	append()
+	newcases()
