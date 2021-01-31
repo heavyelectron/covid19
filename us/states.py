@@ -122,7 +122,11 @@ def newcases():
 				else:
 					nrow = row[0:3]
 					for i in range(8, len(row)):
-						nrow += [locale.atoi(row[i])-locale.atoi(row[i-1])]
+						dailynewcase = locale.atoi(row[i])-locale.atoi(row[i-1])
+						# fix a Puerto Rico case error 11/9/20
+						if dailynewcase < -1000:
+							dailynewcase = 0
+						nrow += [dailynewcase]
 				writer.writerow(nrow)
 	
 	with open('us_states_deaths.csv', newline='') as infile:

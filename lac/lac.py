@@ -58,7 +58,9 @@ def convert(infile, lpfile):
 				break
 
 			numbers = re.findall(r"[-+]?\d*\.\d+|\d+", line)
-			if len(numbers)==4:
+			if '- Under Investigation' in line :
+				continue
+			elif len(numbers)==4:
 				if not ( 'Unincorporated' in line and int(numbers[0])==0):
 					if 'City of Lynwood' in line:
 						out.write(f"City of Long Beach\t{lb_case}\t{int(lb_case/lb_pop*100000)}\t{lb_death}\t{int(lb_death/lb_pop*100000)}\n")
@@ -72,6 +74,7 @@ def convert(infile, lpfile):
 				elif ("Unincorporated - Harbor Gateway"in line):
 					out.write("{}\n".format(line.strip()))	
 			else:
+				
 				if not ('Unincorporated' in line):
 					out.write("{}\n".format(line.strip())) 
 
