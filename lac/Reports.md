@@ -1,6 +1,6 @@
 # Los Angeles County COVID-19 Daily Reports
 
-Last updated 2/17/2021 
+Last updated 2/18/2021 
 
 ## Contents
 
