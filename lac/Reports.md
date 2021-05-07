@@ -1,6 +1,6 @@
 # Los Angeles County COVID-19 Daily Reports
 
-Last updated 5/3/2021 
+Last updated 5/6/2021 
 
 ## Contents
 
@@ -38,6 +38,8 @@ Last updated 5/3/2021
 <a name="race"/>
 
 ## Los Angeles County COVID-19 Cases/Deaths by Race/Ethnicity
+
+Updating stopped from 5/5/2021: most of the recent new cases/deaths for race groups were from the "under investigation" group, not real new cases/deaths. 
 
 ### Cases
 
