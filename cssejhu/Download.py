@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import urllib.request
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, date
 import os.path
 import csv
 
@@ -82,21 +82,30 @@ def print_us():
             # first line: header
             if row[1] == "Country/Region":
                 length = len(row)
-                dates = row[length-days:length]
+                dates = row[4:length]
             # find US
             elif row[1] == 'US':
                 length = len(row)
-                cases =  row[length - days:length]
+                cases =  row[4:length]
     with open('global_deaths.csv', newline='') as csvfile:
         reader = csv.reader(csvfile, delimiter=',', quotechar='|')
         for row in reader:
             if row[1] == 'US':
                 length = len(row)
-                deaths = row[length-days:length]
-    
-    for i in range(days):
+                deaths = row[4:length]
+
+    length = len(dates)
+    for i in range(length-days, length):
         print(dates[i], f'{int(cases[i]):,}', f'{int(deaths[i]):,}') 
    
+	# save to a file
+    with open('us.csv', 'w', newline='') as csvfile:
+        writer = csv.writer(csvfile, delimiter=',')
+        writer.writerow(['Date', 'Cases', 'Deaths'])
+        for i in range(4, length):
+            writer.writerow([dates[i], f'{int(cases[i]):,}', f'{int(deaths[i]):,}'])
+			 
+		
     return
 
 def print_cal():
@@ -106,14 +115,18 @@ def print_cal():
 
     # set today
     today = datetime.today()
-
-    print("California summary: cases, deaths")
-    # count down for 5 days
-    for i in range(14):
-        day = today - timedelta(i)
-        # date string, e.g., 07-22-2020
+    startday = date(2020, 4, 12)
+    
+    days = (today.date()-startday).days + 1
+    
+    
+    dates = []
+    cases = []
+    deaths = []
+    
+    for i in range (days):
+        day = startday + timedelta(i)
         datestring = datetime.strftime(day, '%m-%d-%Y')
-        # get the full path
         filename = os.path.join('us_states', datestring + '.csv')
         if os.path.exists(filename): # check existence
             # file exists, open it
@@ -123,7 +136,25 @@ def print_cal():
                 for row in reader:
                     # find California
                     if row[0] == 'California':
-                        print(datestring, [f'{int(row[i]):,}' for i in [5, 6]])
+                        dates.append(datestring)
+                        cases.append(row[5])
+                        deaths.append(row[6])
+
+    # save to a file
+    days = len(dates)
+    with open('california.csv', 'w', newline='') as csvfile:
+        writer = csv.writer(csvfile, delimiter=',')
+        writer.writerow(['Date', 'Cases', 'Deaths'])
+        for i in range(days):
+            writer.writerow([dates[i], f'{int(cases[i]):,}', f'{int(deaths[i]):,}'])
+
+    print("California summary: cases, deaths")
+    days = len(dates)
+    # count down for 5 days
+    for i in range(days-14, days):
+        print(dates[i], f'{int(cases[i]):,}', f'{int(deaths[i]):,}') 
+                        
+    
 
     return
 
