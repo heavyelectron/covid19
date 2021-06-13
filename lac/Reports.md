@@ -1,17 +1,15 @@
 # Los Angeles County COVID-19 Daily Reports
 
-Last updated 6/11/2021 
-
 ## Contents
 
 <!--ts-->
    * [Los Angeles County COVID-19 Statistics Curves (updated every afternoon)](#stats)
-   * [Map for daily new cases of cities/communities in Los Angeles County (ArcGIS Online)](https://arcg.is/1jS8TX0)
+   * [Map for daily new cases of cities/communities in Los Angeles County (ArcGIS Online)](https://arcg.is/1jS8TX0) (updating stopped from 05/18/2021)
    * [Los Angeles County COVID-19 Recovery Metrics](https://covid19.ca.gov/state-dashboard/) by California's [Blueprint for a Safer Economy](https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/COVID-19/COVID19CountyMonitoringOverview.aspx) Updated every Tuesday 
    * [(obsolete) Los Angeles County COVID-19 Recovery Metrics](https://docs.google.com/spreadsheets/d/e/2PACX-1vSNKjIlnTz9NPIRIOhf1pwHTg01zt4k4hE0B7x-bFXCcuH8JoOmNlhIejbwEgoqLx4Pq0J-w0miaN16/pubhtml?gid=350811760&single=true), with [thresholds set by state of California](https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/COVID-19/COVID19CountyDataTable.aspx)
    * [COVID-19 by the Numbers: Comparison between US, California and Los Angeles County(updated every day after 10pm)](#comparison)
-   * [Los Angeles County COVID-19 Cases/Deaths by Race/Ethnicity (updated every Wednesday)](#race)
-   * [Los Angeles County COVID-19 Cases/Deaths by Age Group(updated every Wednesday)](#age) 
+   * [Los Angeles County COVID-19 Cases/Deaths by Race/Ethnicity (updated every Wednesday)](#race) (updating stopped from 5/5/2021)
+   * [Los Angeles County COVID-19 Cases/Deaths by Age Group(updated every Wednesday)](#age) (updating stopped from 5/5/2021)
    * [Data Sources](#source)
    * [See LAC historic data from Wayback Machine](https://web.archive.org/web/*/http://publichealth.lacounty.gov/media/Coronavirus/locations.htm) 
 <!--te-->
@@ -19,6 +17,9 @@ Last updated 6/11/2021
 <a name="stats"/>
 
 ## Los Angeles County COVID-19 Statistics
+
+Last updated 6/12/2021 
+
 
 ![](https://docs.google.com/spreadsheets/d/e/2PACX-1vSNKjIlnTz9NPIRIOhf1pwHTg01zt4k4hE0B7x-bFXCcuH8JoOmNlhIejbwEgoqLx4Pq0J-w0miaN16/pubchart?oid=2058626982&format=image)  
 ![](https://docs.google.com/spreadsheets/d/e/2PACX-1vSNKjIlnTz9NPIRIOhf1pwHTg01zt4k4hE0B7x-bFXCcuH8JoOmNlhIejbwEgoqLx4Pq0J-w0miaN16/pubchart?oid=1543185546&format=image)
@@ -37,7 +38,7 @@ Last updated 6/11/2021
 
 <a name="race"/>
 
-## Los Angeles County COVID-19 Cases/Deaths by Race/Ethnicity
+## Los Angeles County COVID-19 Cases/Deaths by Race/Ethnicity 
 
 Updating stopped from 5/5/2021: most of the recent new cases/deaths for race groups were from the "under investigation" group, not real new cases/deaths. 
 
