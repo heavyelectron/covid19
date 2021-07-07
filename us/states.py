@@ -76,14 +76,14 @@ def append():
 					rdeaths[-1+diff] = ndeathval
 
 				rcases[3] = rcases[-1]
-				rcases[5] = int(rcases[-1])-int(rcases[-2])
+				rcases[5] = int((int(rcases[-1])-int(rcases[-8]))/7)
 				if rcases[6] != '':
 					rcases[4] = int(int(rcases[3])/int(rcases[6].replace(',',''))*100000)
 				ncases.writerow(rcases)
 
 
 				rdeaths[3] = rdeaths[-1]
-				rdeaths[5] = int(rdeaths[-1])-int(rdeaths[-2])
+				rdeaths[5] = int((int(rdeaths[-1])-int(rdeaths[-8]))/7)
 				if rcases[6] != '':
 					rdeaths[4] = int(int(rdeaths[3])/int(rdeaths[6].replace(',',''))*100000)
 				ndeaths.writerow(rdeaths)
