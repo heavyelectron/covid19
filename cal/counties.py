@@ -18,7 +18,7 @@ def subtract():
 			for row in reader:
 				if row[0] == 'UID':
 					pop=popreader.__next__()
-					nrow = ['County', 'Latitude', 'Longitude', 'Population','Cumulative Cases','Cumulative Case Rate','14-day Case Rate', 'Daily New Cases']
+					nrow = ['County', 'Latitude', 'Longitude', 'Population','Cumulative Cases','Cumulative Case Rate','14-day Case Rate', 'Daily New Cases (7-day avg)']
 					for i in range(start_date, len(row)):
 						nrow.append(row[i])
 					writer.writerow(nrow)
@@ -28,7 +28,7 @@ def subtract():
 					ccase = "{:,}".format(int(row[-1]))
 					ccaser = "{:,.2f}".format(int(row[-1])/int(pop[1])*100000)
 					ccaser14 = "{:,.2f}".format((int(row[-1])-int(row[-15]))/int(pop[1])*100000)
-					ncase = "{:,}".format(int(row[-1])-int(row[-2]))  
+					ncase = "{:,}".format(int((int(row[-1])-int(row[-8]))/7))  
 					
 					nrow = [row[5], row[8], row[9], p, ccase, ccaser, ccaser14, ncase]
 					for i in range(start_date, len(row)):
@@ -41,13 +41,13 @@ def subtract():
 			writer = csv.writer(outfile, delimiter=',')
 			for row in reader:
 				if row[0] == 'UID':
-					nrow = ['County', 'Latitude', 'Longitude', 'Population', 'Cumulative Deaths', 'Cumulative Death Rate', 'Daily New Deaths']
+					nrow = ['County', 'Latitude', 'Longitude', 'Population', 'Cumulative Deaths', 'Cumulative Death Rate', 'Daily New Deaths (7-day avg)']
 					for i in range(start_date+1, len(row)):
 						nrow.append(row[i])
 					writer.writerow(nrow)
 				if row[6] == 'California' and row[0]!='84080006' and row[0]!='84090006':
 					drate = "{:,.2f}".format(int(row[-1])/int(row[11])*100000)
-					nrow = [row[5], row[8], row[9], row[11], row[-1], drate, int(row[-1])-int(row[-2])]
+					nrow = [row[5], row[8], row[9], row[11], row[-1], drate, int((int(row[-1])-int(row[-8]))/7)]
 					for i in range(start_date+1, len(row)):
 						nrow.append(row[i])
 					writer.writerow(nrow)
