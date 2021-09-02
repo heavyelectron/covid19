@@ -31,15 +31,12 @@ def check_date_seq(input_date):
 	# all done
 	return match
 
-def convert(infile, lpfile):
+def convert(infile):
+	"""
+	Read the daily case/deaths number from a text file and convert to spreadsheet
+	"""
 	# set a counter
 	count = 0
-	
-	lpf = open(lpfile)
-
-	lp = re.findall(r"[-+]?\d*\.\d+|\d+", lpf.readline())	
-	lpf.close()
-	lb_case, pas_case, lb_death, pas_death = [int(i) for i in lp]
 
 	lb_pop = 483984
 	pas_pop = 174449
@@ -48,13 +45,22 @@ def convert(infile, lpfile):
 	newfile = pathlib.Path(infile).with_suffix('.csv').name
 
 	# open file and read line by line
-	with open(infile) as fp, open(newfile, 'w', newline='') as out: 
-		
-		while True: 
-			count += 1
-			line = fp.readline() 
+	with open(infile) as fp, open(newfile, 'w', newline='') as out:
 
-			if not line: 
+		# read long beach
+		line = fp.readline()
+		numbers = re.findall(r"[-+]?\d*\.\d+|\d+", line)
+		lb_case, lb_death = [int(i) for i in numbers]
+		# read pasadena
+		line = fp.readline()
+		numbers = re.findall(r"[-+]?\d*\.\d+|\d+", line)
+		pas_case, pas_death = [int(i) for i in numbers]
+
+		# read the rest
+		while True:
+			count += 1
+			line = fp.readline()
+			if not line:
 				break
 
 			numbers = re.findall(r"[-+]?\d*\.\d+|\d+", line)
@@ -65,18 +71,18 @@ def convert(infile, lpfile):
 					if 'City of Lynwood' in line:
 						out.write(f"City of Long Beach\t{lb_case}\t{int(lb_case/lb_pop*100000)}\t{lb_death}\t{int(lb_death/lb_pop*100000)}\n")
 					if 'City of Pico Rivera' in line:
-						out.write(f"City of Pasadena\t{pas_case}\t{int(pas_case/pas_pop*100000)}\t{pas_death}\t{int(pas_death/pas_pop*100000)}\n")				
+						out.write(f"City of Pasadena\t{pas_case}\t{int(pas_case/pas_pop*100000)}\t{pas_death}\t{int(pas_death/pas_pop*100000)}\n")
 					out.write("{}\n".format(line.strip()))
 				elif ("Unincorporated - Roosevelt" in line):
-					out.write("{}\n".format(line.strip()))	
+					out.write("{}\n".format(line.strip()))
 				elif ("Unincorporated - San Francisquito Canyon/Bouquet Canyon" in line):
-					out.write("{}\n".format(line.strip()))	
+					out.write("{}\n".format(line.strip()))
 				elif ("Unincorporated - Harbor Gateway"in line):
-					out.write("{}\n".format(line.strip()))	
+					out.write("{}\n".format(line.strip()))
 			else:
-				
+
 				if not ('Unincorporated' in line):
-					out.write("{}\n".format(line.strip())) 
+					out.write("{}\n".format(line.strip()))
 
 	# all done
 	return
@@ -91,7 +97,7 @@ def merge(infile, input_date):
 		deaths = csv.reader(deathsf, delimiter=',')
 		ncases = csv.writer(ncasesf, delimiter=',')
 		ndeaths = csv.writer(ndeathsf, delimiter=',')
-		
+
 		# first line headers
 		rcase = cases.__next__()
 		rdeath = deaths.__next__()
@@ -102,10 +108,10 @@ def merge(infile, input_date):
 		rdeath.append(adate)
 		ncases.writerow(rcase)
 		ndeaths.writerow(rdeath)
-		
+
 		len_cases = len(rcase)
 		len_deaths = len(rdeath)
-		
+
 		skip = False
 		for new_row in new:
 			if not skip:
@@ -117,7 +123,7 @@ def merge(infile, input_date):
 			#print(city, rcase[0], rdeath[0])
 			if city ==  rcase[0] and city == rdeath[0]:
 				skip = False
-				
+
 				rcase.append(new_row[1])
 				rcase[3] = new_row[1]
 				rcase[4] = new_row[2]
@@ -127,14 +133,14 @@ def merge(infile, input_date):
 				rcase[7] = int(rcase[-1])-int(rcase[-2]) if rcase[-2] !='' else rcase[-1]
 				rcase[8] = int(rcase[-1])-int(rcase[-8]) if rcase[-8] !='' else rcase[-1]
 				if rcase[-31] != '':
-					rcase[9] = (int(rcase[-1])-int(rcase[-15]))*100000//int(rcase[10]) 
+					rcase[9] = (int(rcase[-1])-int(rcase[-15]))*100000//int(rcase[10])
 				else:
-					rcase[9] = int(rcase[-1])*100000//int(rcase[10]) 
+					rcase[9] = int(rcase[-1])*100000//int(rcase[10])
 				ncases.writerow(rcase)
-				
+
 				rdeath.append(new_row[3])
 				ndeaths.writerow(rdeath)
-				
+
 			else:
 				skip = True
 				print(city, " is new, please add its lat/lon")
@@ -150,12 +156,12 @@ def merge(infile, input_date):
 				nrcase[8] = int(nrcase[-1])
 				nrcase[9] = int(nrcase[-1])*100000//int(nrcase[10])
 				ncases.writerow(nrcase)
-				
+
 				nrdeath = [None]*len_deaths
 				nrdeath[0] = new_row[0]
 				nrdeath[-1] = new_row[3]
 				ndeaths.writerow(nrdeath)
-	
+
 	os.remove('lac_cities_cases.csv')
 	os.rename('lac_cities_cases1.csv', 'lac_cities_cases.csv')
 	os.remove('lac_cities_deaths.csv')
@@ -211,7 +217,7 @@ def newcases():
 	return
 
 if __name__ == "__main__":
-	
+
 	if len(sys.argv) == 2 :
 		# with an input %m-%d-%y.txt file
 		input_date_file = sys.argv[1]
@@ -225,12 +231,10 @@ if __name__ == "__main__":
 		print(f"{input_date_file} does not exist")
 		sys.exit(1)
 
-	lb_pas_file = 'lb_pas.txt'
-
 	# check whether the date matches
 	if check_date_seq(input_date):
 		print("matches, adding new data ...")
-		convert(input_date_file, lb_pas_file)
+		convert(input_date_file)
 		merge(input_date_file, input_date)
 		newcases()
 	else:
