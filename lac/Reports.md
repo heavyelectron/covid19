@@ -18,7 +18,7 @@
 
 ## Los Angeles County COVID-19 Statistics
 
-Last updated 9/10/2021 
+Last updated 9/20/2021 
 
 
 ![](https://docs.google.com/spreadsheets/d/e/2PACX-1vSNKjIlnTz9NPIRIOhf1pwHTg01zt4k4hE0B7x-bFXCcuH8JoOmNlhIejbwEgoqLx4Pq0J-w0miaN16/pubchart?oid=2058626982&format=image)  
