@@ -1,3 +1,5 @@
+Long Beach	63828	1020
+Pasadena	13235	361
 City of Agoura Hills	1402	6714	19	91
 City of Alhambra	8065	9300	216	249
 City of Arcadia	3316	5742	147	255
@@ -45,7 +47,6 @@ City of Lakewood	9215	11467	121	151
 City of Lancaster*	27715	17154	318	197
 City of Lawndale	4238	12608	57	170
 City of Lomita	1908	9204	42	203
-City of Long Beach	63778	13177	1019	210
 City of Lynwood*	14796	20537	248	344
 City of Malibu	653	5038	10	77
 City of Manhattan Beach	2022	5617	19	53
@@ -57,7 +58,6 @@ City of Norwalk	18358	17058	400	372
 City of Palmdale	29190	18362	351	221
 City of Palos Verdes Estates	655	4844	10	74
 City of Paramount	11287	20147	167	298
-City of Pasadena	13223	7579	361	206
 City of Pico Rivera	12440	19352	280	436
 City of Pomona	28808	18475	493	316
 City of Rancho Palos Verdes	2083	4873	60	140
@@ -241,6 +241,7 @@ Unincorporated - Bradbury	52	48148	24	22222
 Unincorporated - Canyon Country	1128	14596	6	78
 Unincorporated - Castaic*	4389	16141	20	74
 Unincorporated - Cerritos	76	12947	1	170
+Unincorporated - Charter Oak	0	0	0	0
 Unincorporated - Claremont	51	7265	4	570
 Unincorporated - Covina	2716	16148	45	268
 Unincorporated - Covina (Charter Oak)	1805	13733	21	160
@@ -275,6 +276,7 @@ Unincorporated - Ladera Heights	550	7778	15	212
 Unincorporated - Lake Hughes	55	8234	0	0
 Unincorporated - Lake Los Angeles	1880	14468	20	154
 Unincorporated - Lake Manor	178	10834	2	122
+Unincorporated - Lakewood	0	0	0	0
 Unincorporated - Lennox	3909	17341	54	240
 Unincorporated - Leona Valley	150	8567	3	171
 Unincorporated - Littlerock	628	15618	6	149
@@ -282,6 +284,7 @@ Unincorporated - Littlerock/Juniper Hills	143	11025	2	154
 Unincorporated - Littlerock/Pearblossom	611	17120	11	308
 Unincorporated - Llano	55	6271	2	228
 Unincorporated - Marina del Rey	652	6928	4	43
+Unincorporated - Miracle Mile	0	0	0	0
 Unincorporated - Monrovia	442	11389	1	26
 Unincorporated - Newhall	69	31364	1	455
 Unincorporated - North Lancaster	186	15526	3	250
@@ -301,6 +304,7 @@ Unincorporated - Rosewood	199	15474	5	389
 Unincorporated - Rosewood/East Gardena	195	16345	6	503
 Unincorporated - Rosewood/West Rancho Dominguez	596	17733	16	476
 Unincorporated - Rowland Heights	4149	8132	81	159
+Unincorporated - San Clemente Island	0	0	0	0
 Unincorporated - San Francisquito Canyon/Bouquet Canyon	19	2214	0	0
 Unincorporated - San Jose Hills	3870	19139	79	391
 Unincorporated - San Pasqual	43	2113	0	0
@@ -337,3 +341,4 @@ Unincorporated - Whittier	369	9752	9	238
 Unincorporated - Whittier Narrows	56	466667	1	8333
 Unincorporated - Willowbrook	7825	22413	100	286
 Unincorporated - Wiseburn	634	10519	12	199
+- Under Investigation	17061		61
