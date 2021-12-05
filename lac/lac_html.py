@@ -6,6 +6,7 @@ import pathlib
 import csv
 from datetime import date, datetime, timedelta
 import os
+from bs4 import BeautifulSoup
 
 def check_date_seq(input_date):
 	"""
@@ -21,8 +22,6 @@ def check_date_seq(input_date):
 		row = reader.__next__()
 		# check the last date
 		last_date = datetime.strptime(row[-1], '%m/%d/%y')
-		print(last_date)
-		print(input_date)
 		if (input_date-last_date).days !=1 :
 			print(f"date sequence unmatched, existing {row[-1]}, input {datetime.strftime(input_date, '%m/%d/%y')}")
 			match = False
@@ -30,6 +29,26 @@ def check_date_seq(input_date):
 			match = True
 	# all done
 	return match
+	
+	
+def check_last_date():
+	"""
+	Check whether the input date is right behind the last date of existing file
+	:param input_date: input date in datetime
+	:return: True or False
+	"""
+	# open existing case file
+	with open("lac_cities_cases.csv") as fp:
+		# create a csv reader
+		reader = csv.reader(fp, delimiter=',')
+		# read the first row
+		row = reader.__next__()
+		# check the last date
+		last_date = datetime.strptime(row[-1], '%m/%d/%y')
+
+	# all done
+	return last_date
+		
 
 def convert(infile):
 	"""
@@ -60,12 +79,11 @@ def convert(infile):
 		while True:
 			count += 1
 			line = fp.readline()
-			print(line)
 			if not line:
 				break
 
 			numbers = re.findall(r"[-+]?\d*\.\d+|\d+", line)
-			if '- Under Investigation' in line :
+			if 'Under Investigation' in line :
 				continue
 			elif len(numbers)==4:
 				if not ( 'Unincorporated' in line and int(numbers[0])==0):
@@ -114,6 +132,7 @@ def merge(infile, input_date):
 		len_deaths = len(rdeath)
 
 		skip = False
+		eof = False
 		for new_row in new:
 			if not skip:
 				rcase = cases.__next__()
@@ -216,27 +235,80 @@ def newcases():
 			#print(rncase)
 	# all done
 	return
+	
+def get_index_positions(list_of_elems, element):
+    ''' Returns the indexes of all occurrences of give element in
+    the list- listOfElements '''
+    index_pos_list = []
+    index_pos = 0
+    while True:
+        try:
+            # Search for item in list from indexPos to the end of list
+            index_pos = list_of_elems.index(element, index_pos)
+            # Add the index position in list
+            index_pos_list.append(index_pos)
+            index_pos += 1
+        except ValueError as e:
+            break
+    return index_pos_list
+
+def convert_html(input_file, output_file):
+
+    with open(input_file, "r") as fin:
+        soup = BeautifulSoup(fin, 'html.parser')
+        contents = [item.get_text() for item in soup.find_all("td")]
+    
+    indices = get_index_positions(contents, "-- Long Beach")
+    
+    longbeach = ['Long Beach']
+    for index in indices:
+        longbeach.append(contents[index+1])
+        
+    indices = get_index_positions(contents, "-- Pasadena")
+    
+    pasadena = ['Pasadena']
+    for index in indices:
+        pasadena.append(contents[index+1])
+        
+        
+    ist = get_index_positions(contents, "City of Agoura Hills")[0]
+    
+    istart = ist
+    stop = False
+    
+    with open(output_file, "w") as fp: 
+        fp.write('\t'.join(longbeach)+'\n')
+        fp.write('\t'.join(pasadena)+'\n')
+    
+        while not stop:
+            if contents[istart] != "-  Under Investigation" :
+                fp.write('\t'.join(contents[istart:istart+5])+'\n')
+            else:
+                fp.write('\t'.join(contents[istart:istart+4]))
+                stop = True
+            istart +=5
+    return
+
 
 if __name__ == "__main__":
 
-	if len(sys.argv) == 2 :
-		# with an input %m-%d-%y.txt file
-		input_date_file = sys.argv[1]
-		input_date = datetime.strptime(os.path.splitext(input_date_file)[0], '%m-%d-%y')
-	else:
-		# without an input file, assuming today
-		input_date = datetime.today()
-		input_date_file = datetime.strftime(input_date, '%m-%d-%y') + '.txt'
+    current_date = check_last_date()
+    iteration = True
+    
+    while iteration:
+        current_date = current_date + timedelta(1)
+        date_string = datetime.strftime(current_date, '%m-%d-%Y')
+        print('processing date', date_string)
+        
+        input_file = "location/"+date_string+".html"
+        if not(os.path.exists(input_file)):
+            print(f"{input_file} does not exist")
+            iteration = False
+        else:
+            print("adding new data ...")
+            output_file = datetime.strftime(current_date, '%m-%d-%y')+".txt"
+            convert_html(input_file, output_file)
+            convert(output_file)
+            merge(output_file, current_date)
+            newcases()
 
-	if not(os.path.exists(input_date_file)):
-		print(f"{input_date_file} does not exist")
-		sys.exit(1)
-
-	# check whether the date matches
-	if check_date_seq(input_date):
-		print("matches, adding new data ...")
-		convert(input_date_file)
-		merge(input_date_file, input_date)
-		newcases()
-	else:
-		print("not matched")
