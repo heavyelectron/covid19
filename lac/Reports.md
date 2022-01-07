@@ -18,8 +18,6 @@
 
 ## Los Angeles County COVID-19 Statistics
 
-Last updated 11/01/2021 
-
 
 ![](https://docs.google.com/spreadsheets/d/e/2PACX-1vSNKjIlnTz9NPIRIOhf1pwHTg01zt4k4hE0B7x-bFXCcuH8JoOmNlhIejbwEgoqLx4Pq0J-w0miaN16/pubchart?oid=2058626982&format=image)  
 ![](https://docs.google.com/spreadsheets/d/e/2PACX-1vSNKjIlnTz9NPIRIOhf1pwHTg01zt4k4hE0B7x-bFXCcuH8JoOmNlhIejbwEgoqLx4Pq0J-w0miaN16/pubchart?oid=1543185546&format=image)
@@ -39,8 +37,6 @@ Last updated 11/01/2021
 <a name="race"/>
 
 ## Los Angeles County COVID-19 Cases/Deaths by Race/Ethnicity 
-
-Updating stopped from 5/5/2021: most of the recent new cases/deaths for race groups were from the "under investigation" group, not real new cases/deaths. 
 
 ### Cases
 
@@ -81,6 +77,7 @@ Updating stopped from 5/5/2021: most of the recent new cases/deaths for race gro
     
       * [COVID-19 in the state](https://public.tableau.com/views/COVID-19CasesDashboard_15931020425010/Cases?:embed=y&:showVizHome=no)
       * [COVID-19 in hospitals](https://public.tableau.com/views/COVID-19HospitalsDashboard/Hospitals?:embed=y&:showVizHome=no)
+      * [COVID-19 in hospitals - database link](https://data.ca.gov/dataset/covid-19-hospital-data1) - Use Preview and Search for Los Angeles
       
    * [CSSE at Johns Hopkins University](https://github.com/CSSEGISandData/COVID-19)
     
