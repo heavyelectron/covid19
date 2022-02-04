@@ -1,0 +1,2 @@
+yesterday=`date +'%m-%d-%Y.html' -d "1 day ago"`
+curl http://publichealth.lacounty.gov/media/Coronavirus/locations.htm --output ${yesterday}

@@ -1,0 +1,2 @@
+today=`date +'%m-%d-%Y.html'`
+curl http://publichealth.lacounty.gov/media/Coronavirus/locations.htm --output ${today}
