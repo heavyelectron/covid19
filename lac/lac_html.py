@@ -275,17 +275,19 @@ def convert_html(input_file, output_file):
     
     istart = ist
     stop = False
+    end_string = "Under Investigation"
     
     with open(output_file, "w") as fp: 
         fp.write('\t'.join(longbeach)+'\n')
         fp.write('\t'.join(pasadena)+'\n')
     
         while not stop:
-            if contents[istart] != "-  Under Investigation" :
-                fp.write('\t'.join(contents[istart:istart+5])+'\n')
-            else:
+            print(istart, contents[istart])
+            if end_string in contents[istart] :
                 fp.write('\t'.join(contents[istart:istart+4]))
                 stop = True
+            else:
+                fp.write('\t'.join(contents[istart:istart+5])+'\n')
             istart +=5
     return
 
