@@ -29,8 +29,7 @@ def check_date_seq(input_date):
 			match = True
 	# all done
 	return match
-	
-	
+
 def check_last_date():
 	"""
 	Check whether the input date is right behind the last date of existing file
@@ -48,7 +47,7 @@ def check_last_date():
 
 	# all done
 	return last_date
-		
+
 
 def convert(infile):
 	"""
@@ -235,7 +234,7 @@ def newcases():
 			#print(rncase)
 	# all done
 	return
-	
+
 def get_index_positions(list_of_elems, element):
     ''' Returns the indexes of all occurrences of give element in
     the list- listOfElements '''
@@ -257,32 +256,32 @@ def convert_html(input_file, output_file):
     with open(input_file, "r") as fin:
         soup = BeautifulSoup(fin, 'html.parser')
         contents = [item.get_text() for item in soup.find_all("td")]
-    
+
     indices = get_index_positions(contents, "-- Long Beach")
-    
+
     longbeach = ['Long Beach']
     for index in indices:
         longbeach.append(contents[index+1])
-        
+
     indices = get_index_positions(contents, "-- Pasadena")
-    
+
     pasadena = ['Pasadena']
     for index in indices:
         pasadena.append(contents[index+1])
-        
-        
+
+
     ist = get_index_positions(contents, "City of Agoura Hills")[0]
-    
+
     istart = ist
     stop = False
     end_string = "Under Investigation"
-    
+
     with open(output_file, "w") as fp: 
         fp.write('\t'.join(longbeach)+'\n')
         fp.write('\t'.join(pasadena)+'\n')
-    
+
         while not stop:
-            print(istart, contents[istart])
+            # print(istart, contents[istart])
             if end_string in contents[istart] :
                 fp.write('\t'.join(contents[istart:istart+4]))
                 stop = True
@@ -296,12 +295,12 @@ if __name__ == "__main__":
 
     current_date = check_last_date()
     iteration = True
-    
+
     while iteration:
         current_date = current_date + timedelta(1)
         date_string = datetime.strftime(current_date, '%m-%d-%Y')
         print('processing date', date_string)
-        
+
         input_file = "location/"+date_string+".html"
         if not(os.path.exists(input_file)):
             print(f"{input_file} does not exist")
