@@ -118,6 +118,7 @@ def print_cal():
     startday = date(2020, 4, 12)
     
     days = (today.date()-startday).days + 1
+    print("available days", days)
     
     
     dates = []
@@ -130,6 +131,7 @@ def print_cal():
         filename = os.path.join('us_states', datestring + '.csv')
         if os.path.exists(filename): # check existence
             # file exists, open it
+            
             with open(filename, newline='') as csvfile:
                 reader = csv.reader(csvfile, delimiter=',', quotechar='|')
                 # iterate over all lines (states)
@@ -139,6 +141,10 @@ def print_cal():
                         dates.append(datestring)
                         cases.append(row[5])
                         deaths.append(row[6])
+                    elif row[1] == 'California': # from 07/19/22 the original csv added a new col
+                        dates.append(datestring)
+                        cases.append(row[6])
+                        deaths.append(row[7])
 
     # save to a file
     days = len(dates)
