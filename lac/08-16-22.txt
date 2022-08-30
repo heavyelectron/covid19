@@ -1,0 +1,344 @@
+Long Beach	147273	1310
+Pasadena	34877	423
+City of Agoura Hills	5833	27932	24	115
+City of Alhambra	21772	25105	266	307
+City of Arcadia	11164	19330	172	298
+City of Artesia	5194	30926	88	524
+City of Avalon	66	1706	0	0
+City of Azusa	15941	31857	159	318
+City of Baldwin Park	26688	34764	393	512
+City of Bell	15616	42981	145	399
+City of Bell Gardens	15732	36526	142	330
+City of Bellflower	27389	35234	274	352
+City of Beverly Hills	10396	30116	47	136
+City of Bradbury	67	6268	0	0
+City of Burbank	28506	26596	337	314
+City of Calabasas	5120	21050	40	164
+City of Carson	31078	33116	331	353
+City of Cerritos	11311	22592	88	176
+City of Claremont	8437	23125	90	247
+City of Commerce*	5190	39712	48	367
+City of Compton	37158	37194	336	336
+City of Covina	17239	35159	209	426
+City of Cudahy	11315	46474	81	333
+City of Culver City	9955	24972	140	351
+City of Diamond Bar	11629	20219	113	196
+City of Downey	41805	36587	396	347
+City of Duarte	6398	29061	126	572
+City of El Monte	38218	32590	541	461
+City of El Segundo	3647	21726	16	95
+City of Gardena	19501	31807	272	444
+City of Glendale	53043	25688	910	441
+City of Glendora	14140	26799	255	483
+City of Hawaiian Gardens	4699	32018	31	211
+City of Hawthorne	26442	29781	278	313
+City of Hermosa Beach	4194	21322	12	61
+City of Hidden Hills	353	18677	2	106
+City of Huntington Park	24691	41509	219	368
+City of Industry	469	107323	6	1373
+City of Inglewood	33973	29911	397	350
+City of Irwindale	615	42152	10	685
+City of La Canada Flintridge	3942	19050	22	106
+City of La Habra Heights	174	3190	2	37
+City of La Mirada	12488	25178	192	387
+City of La Puente	14676	36062	155	381
+City of La Verne	8399	25236	84	252
+City of Lakewood	23564	29322	173	215
+City of Lancaster*	57649	35681	451	279
+City of Lawndale	9587	28521	74	220
+City of Lomita	5309	25611	59	285
+City of Lynwood*	28113	39020	296	411
+City of Malibu	2622	20230	13	100
+City of Manhattan Beach	6514	18095	30	83
+City of Maywood	11797	42059	106	378
+City of Monrovia	10219	26338	107	276
+City of Montebello	22543	35018	286	444
+City of Monterey Park	15040	24156	242	389
+City of Norwalk	38153	35451	477	443
+City of Palmdale	60377	37981	455	286
+City of Palos Verdes Estates	1950	14421	14	104
+City of Paramount	21297	38015	213	380
+City of Pico Rivera	24656	38355	339	527
+City of Pomona	58788	37701	597	383
+City of Rancho Palos Verdes	6503	15213	86	201
+City of Redondo Beach	13514	19672	72	105
+City of Rolling Hills	245	12629	3	155
+City of Rolling Hills Estates	1311	16159	11	136
+City of Rosemead	13578	24531	196	354
+City of San Dimas*	9818	28445	132	382
+City of San Fernando	11734	47676	81	329
+City of San Gabriel	9676	23627	255	623
+City of San Marino	2045	15403	14	105
+City of Santa Clarita	65151	29557	403	183
+City of Santa Fe Springs	7291	39703	56	305
+City of Santa Monica	23239	25138	257	278
+City of Sierra Madre	2038	18546	25	228
+City of Signal Hill	3544	30042	13	110
+City of South El Monte	7484	35834	91	436
+City of South Gate	43487	44304	320	326
+City of South Pasadena	5525	21207	62	238
+City of Temple City	8523	23380	160	439
+City of Torrance	29630	19850	316	212
+City of Vernon	339	162201	0	0
+City of Walnut	6456	21145	51	167
+City of West Covina	35250	32568	378	349
+City of West Hollywood	10031	27147	62	168
+City of Westlake Village	348	4163	2	24
+City of Whittier	27945	31962	347	397
+Los Angeles	1379005	34095	12955	320
+Los Angeles - Adams-Normandie	2936	35796	18	219
+Los Angeles - Alsace	4107	33001	23	185
+Los Angeles - Angeles National Forest	6	15000	0	0
+Los Angeles - Angelino Heights	746	29816	8	320
+Los Angeles - Arleta	15450	44952	135	393
+Los Angeles - Atwater Village	4418	30124	35	239
+Los Angeles - Baldwin Hills	9026	28999	117	376
+Los Angeles - Bel Air	2160	25626	6	71
+Los Angeles - Beverly Crest	3005	23992	9	72
+Los Angeles - Beverlywood	3754	28498	5	38
+Los Angeles - Boyle Heights*	37286	42915	376	433
+Los Angeles - Brentwood	7552	24397	30	97
+Los Angeles - Brookside	132	22719	2	344
+Los Angeles - Cadillac-Corning	2154	30249	14	197
+Los Angeles - Canoga Park	23158	35470	209	320
+Los Angeles - Carthay	3777	26297	91	634
+Los Angeles - Central	16088	41260	163	418
+Los Angeles - Century City	3246	25375	18	141
+Los Angeles - Century Palms/Cove	14886	44086	133	394
+Los Angeles - Chatsworth	11403	30768	122	329
+Los Angeles - Cheviot Hills	2213	24130	10	109
+Los Angeles - Chinatown	2461	30682	23	287
+Los Angeles - Cloverdale/Cochran	4766	32749	32	220
+Los Angeles - Country Club Park	4354	28734	93	614
+Los Angeles - Crenshaw District	4743	34297	47	340
+Los Angeles - Crestview	3438	30243	53	466
+Los Angeles - Del Rey	7548	25214	44	147
+Los Angeles - Downtown*	14292	51958	68	247
+Los Angeles - Eagle Rock	11998	30306	155	392
+Los Angeles - East Hollywood	8587	29320	157	536
+Los Angeles - Echo Park	4095	28725	28	196
+Los Angeles - El Sereno	15513	37105	143	342
+Los Angeles - Elysian Park	1640	28711	6	105
+Los Angeles - Elysian Valley	3275	32199	33	324
+Los Angeles - Encino	13433	29737	96	213
+Los Angeles - Exposition	1157	34787	8	241
+Los Angeles - Exposition Park	16381	36469	108	240
+Los Angeles - Faircrest Heights	1108	30778	6	167
+Los Angeles - Figueroa Park Square	3390	38872	38	436
+Los Angeles - Florence-Firestone	21343	44985	159	335
+Los Angeles - Glassell Park	9861	31202	75	237
+Los Angeles - Gramercy Place	3701	34383	43	399
+Los Angeles - Granada Hills	19304	33174	261	449
+Los Angeles - Green Meadows	9360	43525	66	307
+Los Angeles - Hancock Park	4231	24831	12	70
+Los Angeles - Harbor City	8406	28916	53	182
+Los Angeles - Harbor Gateway	14176	32514	105	241
+Los Angeles - Harbor Pines	559	23205	3	125
+Los Angeles - Harvard Heights	5747	31866	80	444
+Los Angeles - Harvard Park	16656	43907	130	343
+Los Angeles - Highland Park	15529	32091	143	296
+Los Angeles - Historic Filipinotown	4931	35552	93	671
+Los Angeles - Hollywood	19439	28480	119	174
+Los Angeles - Hollywood Hills	6819	23167	31	105
+Los Angeles - Hyde Park	10599	37136	115	403
+Los Angeles - Jefferson Park	2896	35873	22	273
+Los Angeles - Koreatown	14893	28810	152	294
+Los Angeles - Lafayette Square	1493	32748	11	241
+Los Angeles - Lake Balboa	14471	34287	95	225
+Los Angeles - Lakeview Terrace	5309	40425	50	381
+Los Angeles - Leimert Park	5114	33567	32	210
+Los Angeles - Lincoln Heights	11707	35914	221	678
+Los Angeles - Little Armenia	2767	34480	113	1408
+Los Angeles - Little Bangladesh	8014	28275	40	141
+Los Angeles - Little Tokyo	1294	41302	14	447
+Los Angeles - Longwood	1578	36664	15	349
+Los Angeles - Los Feliz	5087	23542	36	167
+Los Angeles - Manchester Square	2864	33552	22	258
+Los Angeles - Mandeville Canyon	717	22951	1	32
+Los Angeles - Mar Vista	9580	22557	49	115
+Los Angeles - Marina Peninsula	855	19610	5	115
+Los Angeles - Melrose	23728	30540	266	342
+Los Angeles - Mid-city	4188	27864	54	359
+Los Angeles - Miracle Mile	4403	24482	21	117
+Los Angeles - Mission Hills	10784	44702	155	643
+Los Angeles - Mt. Washington	7569	31348	78	323
+Los Angeles - North Hills	23005	37361	195	317
+Los Angeles - North Hollywood	53891	35590	496	328
+Los Angeles - Northridge	22836	32718	225	322
+Los Angeles - Pacific Palisades	4459	20943	18	85
+Los Angeles - Pacoima	35779	46479	288	374
+Los Angeles - Palisades Highlands	830	21581	2	52
+Los Angeles - Palms	10538	24017	80	182
+Los Angeles - Panorama City	30665	40751	338	449
+Los Angeles - Park La Brea	2836	20884	4	29
+Los Angeles - Pico-Union	15205	36339	285	681
+Los Angeles - Playa Del Rey	526	16458	4	125
+Los Angeles - Playa Vista	3032	27697	14	128
+Los Angeles - Porter Ranch	9362	26307	67	188
+Los Angeles - Rancho Park	1965	29954	2	30
+Los Angeles - Regent Square	793	28525	4	144
+Los Angeles - Reseda	28783	37567	386	504
+Los Angeles - Reseda Ranch	1647	35526	6	129
+Los Angeles - Reynier Village	1083	25615	3	71
+Los Angeles - San Pedro*	23477	30084	180	231
+Los Angeles - Shadow Hills	1144	25754	8	180
+Los Angeles - Sherman Oaks	24293	27842	158	181
+Los Angeles - Silverlake	12089	27423	151	343
+Los Angeles - South Carthay	2823	26645	13	123
+Los Angeles - South Park	16140	42517	128	337
+Los Angeles - St Elmo Village	1749	38154	47	1025
+Los Angeles - Studio City	6178	27531	59	263
+Los Angeles - Sun Valley	21289	40564	201	383
+Los Angeles - Sunland	6104	29910	80	392
+Los Angeles - Sycamore Square	167	25811	2	309
+Los Angeles - Sylmar*	38473	46692	325	394
+Los Angeles - Tarzana	9356	30302	106	343
+Los Angeles - Temple-Beaudry	12586	31878	137	347
+Los Angeles - Thai Town	2605	26557	39	398
+Los Angeles - Toluca Lake	2252	25873	11	126
+Los Angeles - Toluca Terrace	420	32159	11	842
+Los Angeles - Toluca Woods	460	24758	0	0
+Los Angeles - Tujunga	8019	28835	97	349
+Los Angeles - University Hills	841	24526	4	117
+Los Angeles - University Park	10472	38141	76	277
+Los Angeles - Valley Glen	10149	33812	100	333
+Los Angeles - Valley Village	7450	30138	95	384
+Los Angeles - Van Nuys*	34340	36848	432	464
+Los Angeles - Venice	8248	24341	31	91
+Los Angeles - Vermont Knolls	6899	40110	76	442
+Los Angeles - Vermont Square	3481	45462	36	470
+Los Angeles - Vermont Vista	17112	41548	129	313
+Los Angeles - Vernon Central	23486	45167	199	383
+Los Angeles - Victoria Park	2584	30766	19	226
+Los Angeles - View Heights	929	25149	9	244
+Los Angeles - Watts	17738	41566	140	328
+Los Angeles - Wellington Square	1645	33469	13	264
+Los Angeles - West Adams	9911	35870	179	648
+Los Angeles - West Hills	10997	27123	148	365
+Los Angeles - West Los Angeles	10043	26685	70	186
+Los Angeles - West Vernon	22691	42299	244	455
+Los Angeles - Westchester	11841	22946	71	138
+Los Angeles - Westlake	19020	32044	369	622
+Los Angeles - Westwood	14395	26604	42	78
+Los Angeles - Wholesale District*	18712	51792	145	401
+Los Angeles - Wilmington	21674	38370	136	241
+Los Angeles - Wilshire Center	15020	29938	149	297
+Los Angeles - Winnetka	17996	34751	125	241
+Los Angeles - Woodland Hills	18267	26842	126	185
+Unincorporated - Acton	1769	22193	17	213
+Unincorporated - Agua Dulce	899	21621	6	144
+Unincorporated - Altadena	10197	23377	101	232
+Unincorporated - Anaverde	371	24602	1	66
+Unincorporated - Angeles National Forest	92	7390	1	80
+Unincorporated - Arcadia	1902	23832	19	238
+Unincorporated - Athens-Westmont	16050	37816	157	370
+Unincorporated - Athens Village	2583	52747	39	796
+Unincorporated - Avocado Heights	2543	37535	21	310
+Unincorporated - Azusa	5624	35320	53	333
+Unincorporated - Bassett	5467	36897	55	371
+Unincorporated - Bouquet Canyon	185	17241	2	186
+Unincorporated - Bradbury	92	85185	27	25000
+Unincorporated - Canyon Country	3203	41447	9	116
+Unincorporated - Castaic*	8894	32709	31	114
+Unincorporated - Cerritos	167	28450	2	341
+Unincorporated - Charter Oak	2	10000	0	0
+Unincorporated - Claremont	115	16382	5	712
+Unincorporated - Covina	5692	33843	58	345
+Unincorporated - Covina (Charter Oak)	4338	33004	26	198
+Unincorporated - Del Aire	1114	25359	4	91
+Unincorporated - Del Rey	126	39623	1	314
+Unincorporated - Del Sur	636	26335	3	124
+Unincorporated - Desert View Highlands	851	34136	13	521
+Unincorporated - Duarte	1808	40831	14	316
+Unincorporated - East Covina	83	25228	1	304
+Unincorporated - East La Mirada	1465	27683	14	265
+Unincorporated - East Lancaster	46	40351	0	0
+Unincorporated - East Los Angeles	54184	43254	548	437
+Unincorporated - East Pasadena	359	5607	11	172
+Unincorporated - East Rancho Dominguez	5613	36667	64	418
+Unincorporated - East Whittier	1281	24142	10	188
+Unincorporated - El Camino Village	2196	24980	16	182
+Unincorporated - El Monte	57	39310	0	0
+Unincorporated - Elizabeth Lake	241	14509	2	120
+Unincorporated - Florence-Firestone	28822	44544	270	417
+Unincorporated - Franklin Canyon	1	8333	0	0
+Unincorporated - Glendora	186	28182	3	455
+Unincorporated - Hacienda Heights	14597	26101	138	247
+Unincorporated - Harbor Gateway	5	500000	0	0
+Unincorporated - Hawthorne	692	27526	5	199
+Unincorporated - Hi Vista	153	13934	2	182
+Unincorporated - Kagel/Lopez Canyons	583	41289	3	212
+Unincorporated - La Crescenta-Montrose	3823	19307	27	136
+Unincorporated - La Habra Heights	17	2515	1	148
+Unincorporated - La Rambla	687	33108	25	1205
+Unincorporated - La Verne*	590	28922	2	98
+Unincorporated - Ladera Heights	1668	23589	19	269
+Unincorporated - Lake Hughes	182	27246	1	150
+Unincorporated - Lake Los Angeles	3771	29021	27	208
+Unincorporated - Lake Manor	413	25137	2	122
+Unincorporated - Lakewood	1	877	0	0
+Unincorporated - Lennox	7151	31723	68	302
+Unincorporated - Leona Valley	297	16962	5	286
+Unincorporated - Littlerock	1320	32828	9	224
+Unincorporated - Littlerock/Juniper Hills	303	23362	4	308
+Unincorporated - Littlerock/Pearblossom	1192	33399	15	420
+Unincorporated - Llano	108	12315	2	228
+Unincorporated - Marina del Rey	2110	22421	4	43
+Unincorporated - Miracle Mile	0	0	0	0
+Unincorporated - Monrovia	1080	27828	4	103
+Unincorporated - Newhall	98	44545	1	455
+Unincorporated - North Lancaster	367	30634	4	334
+Unincorporated - North Whittier	2795	33433	34	407
+Unincorporated - Northeast San Gabriel	5323	22146	53	221
+Unincorporated - Padua Hills	34	15814	0	0
+Unincorporated - Palmdale	226	26841	5	594
+Unincorporated - Palos Verdes Peninsula	102	16425	0	0
+Unincorporated - Pearblossom/Llano	379	19376	3	153
+Unincorporated - Pellissier Village	347	56058	1	162
+Unincorporated - Placerita Canyon	18	3913	0	0
+Unincorporated - Pomona	158	8153	3	155
+Unincorporated - Quartz Hill	3587	27793	36	279
+Unincorporated - Rancho Dominguez	1081	40624	6	225
+Unincorporated - Roosevelt	251	26960	2	215
+Unincorporated - Rosewood	469	36470	6	467
+Unincorporated - Rosewood/East Gardena	477	39983	6	503
+Unincorporated - Rosewood/West Rancho Dominguez	1228	36537	21	625
+Unincorporated - Rowland Heights	11240	22030	110	216
+Unincorporated - San Clemente Island	0	0	0	0
+Unincorporated - San Francisquito Canyon/Bouquet Canyon	41	4779	0	0
+Unincorporated - San Jose Hills	7177	35493	98	485
+Unincorporated - San Pasqual	83	4079	1	49
+Unincorporated - Sand Canyon	57	18506	0	0
+Unincorporated - Santa Catalina Island	750	280899	6	2247
+Unincorporated - Santa Monica Mountains*	3466	18613	23	124
+Unincorporated - Saugus	391	252258	1	645
+Unincorporated - Saugus/Canyon Country	105	29494	1	281
+Unincorporated - South Antelope Valley	105	23077	1	220
+Unincorporated - South El Monte	701	39053	6	334
+Unincorporated - South San Gabriel	2550	28820	60	678
+Unincorporated - South Whittier	19609	33111	192	324
+Unincorporated - Southeast Antelope Valley	218	27913	1	128
+Unincorporated - Stevenson Ranch	5218	24888	15	72
+Unincorporated - Sun Village	2016	33400	19	315
+Unincorporated - Sunrise Village	481	37114	2	154
+Unincorporated - Twin Lakes/Oat Mountain	380	22919	4	241
+Unincorporated - Val Verde	973	29405	3	91
+Unincorporated - Valencia	846	27539	2	65
+Unincorporated - Valinda	8613	36853	99	424
+Unincorporated - View Park/Windsor Hills	3189	27409	22	189
+Unincorporated - Walnut Park	6929	42923	65	403
+Unincorporated - West Antelope Valley	157	10390	2	132
+Unincorporated - West Carson	6987	31635	175	792
+Unincorporated - West Chatsworth	4	33333	0	0
+Unincorporated - West LA	698	73319	22	2311
+Unincorporated - West Puente Valley	3720	37824	37	376
+Unincorporated - West Rancho Dominguez	444	32671	9	662
+Unincorporated - West Whittier/Los Nietos	9584	35595	111	412
+Unincorporated - Westfield/Academy Hills	218	16769	1	77
+Unincorporated - Westhills	167	19905	1	119
+Unincorporated - White Fence Farms	834	22645	9	244
+Unincorporated - Whittier	883	23335	10	264
+Unincorporated - Whittier Narrows	68	566667	1	8333
+Unincorporated - Willowbrook	15380	44052	135	387
+Unincorporated - Wiseburn	1708	28339	15	249
+ - Under Investigation	78629		112
