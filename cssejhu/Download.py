@@ -33,7 +33,7 @@ def download_states():
     # if download from the first available date
     # day = datetime.strptime('04-12-2020', '%m-%d-%Y')
     # if earlier days are already downloaded, just download the most recent 5 days
-    day = datetime.today() - timedelta(30)
+    day = datetime.today() - timedelta(60)
 
     found = True
     # loop till date unavailable

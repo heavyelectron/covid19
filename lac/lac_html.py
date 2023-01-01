@@ -256,6 +256,12 @@ def convert_html(input_file, output_file):
     with open(input_file, "r") as fin:
         soup = BeautifulSoup(fin, 'html.parser')
         contents = [item.get_text() for item in soup.find_all("td")]
+        
+
+    indices = get_index_positions(contents, "Laboratory Confirmed Cases ")
+    print("test", indices)
+    for index in indices:
+        print('print ..', contents[index+1])
 
     indices = get_index_positions(contents, "-- Long Beach")
 
